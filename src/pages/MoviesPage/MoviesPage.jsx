@@ -1,6 +1,7 @@
 import { useState} from "react";
-import {searchMovies} from "../services/api";
-import MovieList from "./components/MovieList/MovieList";
+import {searchMovies} from "../../services/api";
+import MovieList from "../../components/MovieList/MovieList";
+import css from "./MoviesPage.module.css";
 
 
 export default function MoviesPage() {
@@ -13,10 +14,10 @@ export default function MoviesPage() {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input value={query} onChange={(e) => setQuery(e.target.value)}/>
-                <button type="submit">Search</button>
+        <div className={css.container}>
+            <form onSubmit={handleSubmit} className={css.form}>
+                <input className={css.input} value={query} onChange={(e) => setQuery(e.target.value)}/>
+                <button type="submit" className={css.button}>Search</button>
             </form>
             <MovieList movies={movies}/>
         </div>

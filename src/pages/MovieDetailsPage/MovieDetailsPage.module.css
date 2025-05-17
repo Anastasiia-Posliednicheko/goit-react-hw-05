@@ -1,0 +1,43 @@
+.container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.poster {
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+
+
+.link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: flex;
+  gap: 20px;
+}
+
+.link:hover {
+  color: #ffffff;
+}

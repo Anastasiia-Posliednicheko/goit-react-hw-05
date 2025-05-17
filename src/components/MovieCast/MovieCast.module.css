@@ -1,0 +1,21 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+}
+
+.item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.item:hover {
+  background-color: #2a2a2a;
+}
